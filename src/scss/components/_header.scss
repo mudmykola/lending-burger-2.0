@@ -1,0 +1,71 @@
+.header {
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-top__nav {
+        ul {
+            display: flex;
+            align-items: center;
+        }
+        li {
+            box-sizing: border-box;
+        }
+        li+li {
+            margin-left: 28px;
+        }
+        a {
+            color: #fff;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            color: $btn-hover;
+            // @extend %font-b;
+            transition: all 0.4s ease;
+        }
+    }
+    &-top__btn {
+        button {
+            background-color: $btn;
+            border: none;
+            color: #fff;
+            padding: 15px 37px;
+            @extend %font-m;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: $btn-hover;
+            transition: all 0.4s ease;
+        }
+    }
+    &-content {
+        width: 555px;
+        margin-top: 186px;
+        span {
+            letter-spacing: 0.1;
+            color: #fff;
+            @extend %font-m;
+        }
+        h1 {
+            margin: 7px 0 37px;
+            font-size: 57px;
+            line-height: 67px;
+            @extend %font-m;
+        }
+        p {
+            font-size: 18px;
+            line-height: 21px;
+            opacity: 0.7;
+            margin-bottom: 42px;
+        }
+    }
+}
