@@ -3,7 +3,6 @@ var swiper = new Swiper(".slider-inner", {
     autoplay: {
         enable: true,
         delay: 1500,
-
     },
 });
 // slider-mob
