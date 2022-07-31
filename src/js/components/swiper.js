@@ -1,9 +1,5 @@
 var swiper = new Swiper(".slider-inner", {
     slidesPerView: 'auto',
-    autoplay: {
-        enable: true,
-        delay: 1500,
-    },
 });
 // slider-mob
 var swiper6 = new Swiper(".slider-mob", {

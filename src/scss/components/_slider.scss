@@ -20,6 +20,7 @@
     }
     &-list__item {
         text-align: center;
+        cursor: pointer;
         img {
             width: 100%;
         }
@@ -42,11 +43,6 @@
         }
     }
 }
-
-@media (max-width: 1280px) {}
-
-// 1024
-@media (max-width: 1024px) {}
 
 // 768
 @media (max-width: 768px) {
@@ -95,6 +91,9 @@
         &-mob {
             display: block;
         }
+    }
+    .swiper-slide {
+        border-radius: 10px;
     }
 }
 
