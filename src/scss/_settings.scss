@@ -11,8 +11,12 @@ body {
     color: #fff;
 }
 
-ul {
+ul,
+p,
+h3 {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 *,
@@ -110,4 +114,20 @@ a {
 
 .page--ios .dis-scroll {
     position: relative;
+}
+
+.global-btn {
+    background-color: $btn;
+    border: none;
+    color: #fff;
+    padding: 15px 37px;
+    @extend %font-m;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.global-btn:hover {
+    background-color: $btn-hover;
+    transition: all 0.4s ease;
 }
