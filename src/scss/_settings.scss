@@ -131,3 +131,18 @@ a {
     background-color: $btn-hover;
     transition: all 0.4s ease;
 }
+
+.global-strong {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    color: $btn;
+}
+
+.global-span {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: line-through;
+    opacity: 0.5;
+    line-height: 0.1em;
+}
