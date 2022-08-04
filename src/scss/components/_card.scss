@@ -71,3 +71,106 @@
         }
     }
 }
+
+// 768
+@media (max-width: 768px) {
+    .card {
+        &-inner {
+            flex-direction: column;
+        }
+        &-right__list {
+            margin-right: 0;
+            margin: 0 auto;
+        }
+        &-item__third {
+            margin-bottom: 30px;
+        }
+        &-left__list {
+            margin: 0 auto;
+        }
+    }
+}
+
+// 600
+@media (max-width: 600px) {
+    .card {
+        &-inner {
+            flex-direction: column;
+        }
+        &-right__list {
+            margin-right: 0;
+            margin: 0 auto;
+        }
+        &-item__third {
+            margin-bottom: 30px;
+        }
+        &-left__list {
+            margin: 0 auto;
+        }
+    }
+}
+
+// 480
+@media (max-width: 480px) {
+    .card {
+        &-inner {
+            margin: 100px 0 100px;
+            flex-direction: column;
+        }
+        &-right__list {
+            margin-right: 0;
+            margin: 0 auto;
+        }
+        &-item__first,
+        &-item__third,
+        &-item__second,
+        &-item__fourth {
+            width: 400px;
+            height: 555px;
+            background-position: center center;
+        }
+        &-item__third {
+            margin-bottom: 30px;
+        }
+        &-item__text {
+            padding-left: 179px;
+            padding-top: 135px;
+        }
+        &-item__text {
+            &--left {
+                padding-left: 20px;
+            }
+        }
+    }
+    .card-left__list {
+        margin: 0 auto;
+    }
+}
+
+// 320
+@media (max-width: 320px) {
+    .card {
+        &-inner {
+            margin: 100px 0 100px;
+            flex-direction: column;
+        }
+        &-right__list {
+            margin-right: 0;
+        }
+        &-item__first,
+        &-item__third,
+        &-item__second,
+        &-item__fourth {
+            width: 293px;
+            height: 400px;
+            background-position: center center;
+        }
+        &-item__third {
+            margin-bottom: 30px;
+        }
+        &-item__text {
+            padding-left: 10px;
+            padding-top: 96px;
+        }
+    }
+}
