@@ -1,0 +1,37 @@
+.recent {
+    &-inner__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 194px;
+    }
+    &-list__item {
+        &--left {
+            width: 368px;
+            margin-left: 118px;
+            text-align: center;
+            img {
+                margin-bottom: 37px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 19px;
+                @extend %font-r;
+                opacity: 0.7;
+                margin-bottom: 27px;
+            }
+            h3 {
+                font-size: 24px;
+                line-height: 28px;
+                @extend %font-m;
+                margin-bottom: 2px;
+            }
+            strong {
+                font-size: 12px;
+                line-height: 14px;
+                @extend %font-m;
+                opacity: 0.7;
+            }
+        }
+    }
+}
