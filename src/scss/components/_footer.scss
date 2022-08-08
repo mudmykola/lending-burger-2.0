@@ -1,0 +1,109 @@
+.footer {
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 122px 0 142px;
+    }
+    &-inner__mail {
+        margin-bottom: 9px;
+    }
+    &-inner__mail a {
+        position: relative;
+        padding-left: 20px;
+        font-size: 12px;
+        line-height: 14px;
+        opacity: 0.8;
+        @extend %font-r;
+        color: #fff;
+        transition: all 0.5 ease;
+    }
+    &-inner__mail a:hover {
+        border-bottom: 1px solid #F6762C;
+        transition: all 0.3 ease;
+    }
+    &-inner__mail a::after {
+        background-image: url("/img/svg/mail.svg");
+        content: "";
+        display: block;
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        top: 7%;
+        bottom: 0;
+        left: 0;
+    }
+    &-inner__link a {
+        position: relative;
+        padding-left: 20px;
+        font-size: 12px;
+        line-height: 14px;
+        opacity: 0.8;
+        @extend %font-r;
+        color: #fff;
+        display: flex;
+        transition: all 0.5 ease;
+    }
+    &-inner__link a:hover {
+        border-bottom: 1px solid #F6762C;
+        transition: all 0.3 ease;
+    }
+    &-inner__link a::after {
+        background-image: url("/img/svg/link.svg");
+        content: "";
+        display: block;
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        top: 7%;
+        bottom: 0;
+        left: 0;
+    }
+    &-nav {
+        &__list {
+            display: flex;
+            li+li {
+                margin-left: 158px;
+            }
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            h3 {
+                font-size: 16px;
+                line-height: 19px;
+                @extend %font-m;
+                margin-bottom: 14px;
+            }
+            a+a {
+                margin-top: 15px;
+            }
+            a {
+                font-size: 12px;
+                line-height: 14px;
+                @extend %font-r;
+                opacity: 0.8;
+                color: #fff;
+                transition: all 0.8 ease-in-out;
+            }
+            a:hover {
+                color: $btn;
+                transition: all 0.4 ease-in-out;
+            }
+        }
+    }
+    &-inner__social {
+        ul {
+            display: flex;
+            margin-top: 15px;
+        }
+        li+li {
+            margin-left: 10px;
+        }
+    }
+}
