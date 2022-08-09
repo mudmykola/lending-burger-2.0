@@ -1,2 +1,3 @@
 Посилання на активний сайт
-landing-burger.surge.sh
+
+http://landing-burger.surge.sh
